@@ -17,6 +17,13 @@ Affichage du nombre de couleurs utilisées
 
 
 Trie les sommets par ordre décroissant de degré
+
+
 Attribue la première couleur au premier sommet
+
+
 Parcourt la liste triée et attribue cette couleur à tout sommet non adjacent aux sommets déjà colorés
+
+
+
 Répète les étapes 2-3 avec une nouvelle couleur jusqu'à ce que tous les sommets soient colorés

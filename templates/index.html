@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloration de Graphe Welsh-Powell</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Coloration de Graphe Welsh-Powell</h1>
+        <div class="input-section">
+            <h2>Entrez le graphe</h2>
+            <p>Format : {"A": ["B", "C"], "B": ["A", "C"], "C": ["A", "B"]}</p>
+            <textarea id="graph-input" rows="5"></textarea>
+            <button id="colorize-btn">Colorier le graphe</button>
+        </div>
+        <div class="output-section">
+            <h2>Graphe colorié</h2>
+            <div id="graph-output"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
+
+
